@@ -38,8 +38,16 @@ def train_update_loop():
         trains = simulator.update_positions()
         socketio.emit('trains_update', {'trains': trains})
 
+@app.route('/', methods=['GET'])
+def index():
+    return jsonify({
+        "status": "ONLINE",
+        "message": "ARRA (Autonomous Railway Response Architecture) Backend is running."
+    })
+
 @app.route('/api/status', methods=['GET'])
 def get_status():
+
     return jsonify({
         "status": "ONLINE",
         "system": "ARRA (Autonomous Railway Response Architecture)",
