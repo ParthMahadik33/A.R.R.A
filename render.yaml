@@ -1,0 +1,32 @@
+services:
+  # 1. Flask SocketIO Backend Service
+  - type: web
+    name: arra-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python backend/main.py
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: GEMINI_API_KEY
+        sync: false # Set this in the Render Dashboard
+      - key: GROQ_API_KEY
+        sync: false # Set this in the Render Dashboard (Optional)
+    # Note: SQLite database backend/db/arra.db will be ephemeral on a standard web service.
+    # To persist logs across redeploys, a persistent disk can be mounted at /opt/render/project/src/backend/db
+
+  # 2. Next.js Frontend Service
+  - type: web
+    name: arra-frontend
+    env: node
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NEXT_PUBLIC_BACKEND_URL
+        fromService:
+          type: web
+          name: arra-backend
+          property: host

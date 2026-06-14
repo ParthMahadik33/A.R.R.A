@@ -1,0 +1,242 @@
+[
+  {
+    "code": "HWH",
+    "name": "Howrah Junction",
+    "lat": 22.5834,
+    "lng": 88.3411,
+    "km": 0,
+    "platforms": 23,
+    "division": "Howrah",
+    "station_master_contact": "+91-33-2641-3660"
+  },
+  {
+    "code": "KGP",
+    "name": "Kharagpur Junction",
+    "lat": 22.3164,
+    "lng": 87.3142,
+    "km": 115,
+    "platforms": 12,
+    "division": "Kharagpur",
+    "station_master_contact": "+91-3222-255735"
+  },
+  {
+    "code": "BLS",
+    "name": "Balasore",
+    "lat": 21.5030,
+    "lng": 86.9250,
+    "km": 231,
+    "platforms": 4,
+    "division": "Kharagpur",
+    "station_master_contact": "+91-6782-262024"
+  },
+  {
+    "code": "BHC",
+    "name": "Bhadrak",
+    "lat": 21.0500,
+    "lng": 86.5000,
+    "km": 294,
+    "platforms": 4,
+    "division": "Khurda Road",
+    "station_master_contact": "+91-6784-230534"
+  },
+  {
+    "code": "JJKR",
+    "name": "Jajpur Keonjhar Road",
+    "lat": 20.9400,
+    "lng": 86.1300,
+    "km": 337,
+    "platforms": 4,
+    "division": "Khurda Road",
+    "station_master_contact": "+91-6726-220042"
+  },
+  {
+    "code": "CTC",
+    "name": "Cuttack Junction",
+    "lat": 20.4630,
+    "lng": 85.8790,
+    "km": 409,
+    "platforms": 5,
+    "division": "Khurda Road",
+    "station_master_contact": "+91-671-2510255"
+  },
+  {
+    "code": "BBS",
+    "name": "Bhubaneswar",
+    "lat": 20.2600,
+    "lng": 85.8400,
+    "km": 437,
+    "platforms": 6,
+    "division": "Khurda Road",
+    "station_master_contact": "+91-674-2532233"
+  },
+  {
+    "code": "KUR",
+    "name": "Khurda Road Junction",
+    "lat": 20.1800,
+    "lng": 85.7300,
+    "km": 456,
+    "platforms": 8,
+    "division": "Khurda Road",
+    "station_master_contact": "+91-674-2490567"
+  },
+  {
+    "code": "BALU",
+    "name": "Balugaon",
+    "lat": 19.7400,
+    "lng": 85.2100,
+    "km": 536,
+    "platforms": 3,
+    "division": "Khurda Road",
+    "station_master_contact": "+91-6756-250222"
+  },
+  {
+    "code": "BAM",
+    "name": "Brahmapur",
+    "lat": 19.3100,
+    "lng": 84.7900,
+    "km": 603,
+    "platforms": 4,
+    "division": "Khurda Road",
+    "station_master_contact": "+91-680-2220555"
+  },
+  {
+    "code": "PSA",
+    "name": "Palasa",
+    "lat": 18.7700,
+    "lng": 84.4200,
+    "km": 746,
+    "platforms": 3,
+    "division": "Khurda Road",
+    "station_master_contact": "+91-8945-241235"
+  },
+  {
+    "code": "CHE",
+    "name": "Srikakulam Road",
+    "lat": 18.2800,
+    "lng": 83.9000,
+    "km": 819,
+    "platforms": 4,
+    "division": "Waltair",
+    "station_master_contact": "+91-8942-286221"
+  },
+  {
+    "code": "VZM",
+    "name": "Vizianagaram Junction",
+    "lat": 18.1200,
+    "lng": 83.4200,
+    "km": 888,
+    "platforms": 5,
+    "division": "Waltair",
+    "station_master_contact": "+91-8922-225333"
+  },
+  {
+    "code": "VSKP",
+    "name": "Visakhapatnam Junction",
+    "lat": 17.7200,
+    "lng": 83.3000,
+    "km": 949,
+    "platforms": 8,
+    "division": "Waltair",
+    "station_master_contact": "+91-891-2746333"
+  },
+  {
+    "code": "DVD",
+    "name": "Duvvada",
+    "lat": 17.7000,
+    "lng": 83.1700,
+    "km": 966,
+    "platforms": 4,
+    "division": "Waltair",
+    "station_master_contact": "+91-891-2581230"
+  },
+  {
+    "code": "SLO",
+    "name": "Samalkot Junction",
+    "lat": 17.0500,
+    "lng": 82.2300,
+    "km": 1099,
+    "platforms": 3,
+    "division": "Vijayawada",
+    "station_master_contact": "+91-8852-224422"
+  },
+  {
+    "code": "RJY",
+    "name": "Rajahmundry",
+    "lat": 17.0000,
+    "lng": 81.7800,
+    "km": 1149,
+    "platforms": 3,
+    "division": "Vijayawada",
+    "station_master_contact": "+91-883-2420555"
+  },
+  {
+    "code": "EE",
+    "name": "Eluru",
+    "lat": 16.7100,
+    "lng": 81.1000,
+    "km": 1239,
+    "platforms": 3,
+    "division": "Vijayawada",
+    "station_master_contact": "+91-8812-230325"
+  },
+  {
+    "code": "BZA",
+    "name": "Vijayawada Junction",
+    "lat": 16.5100,
+    "lng": 80.6200,
+    "km": 1299,
+    "platforms": 10,
+    "division": "Vijayawada",
+    "station_master_contact": "+91-866-2571234"
+  },
+  {
+    "code": "TEL",
+    "name": "Tenali Junction",
+    "lat": 16.2400,
+    "lng": 80.6400,
+    "km": 1331,
+    "platforms": 5,
+    "division": "Vijayawada",
+    "station_master_contact": "+91-8644-227222"
+  },
+  {
+    "code": "OGL",
+    "name": "Ongole",
+    "lat": 15.5000,
+    "lng": 80.0500,
+    "km": 1438,
+    "platforms": 3,
+    "division": "Vijayawada",
+    "station_master_contact": "+91-8592-233422"
+  },
+  {
+    "code": "NLR",
+    "name": "Nellore",
+    "lat": 14.4500,
+    "lng": 79.9800,
+    "km": 1555,
+    "platforms": 4,
+    "division": "Vijayawada",
+    "station_master_contact": "+91-861-2345522"
+  },
+  {
+    "code": "GDR",
+    "name": "Gudur Junction",
+    "lat": 14.1100,
+    "lng": 79.8500,
+    "km": 1593,
+    "platforms": 3,
+    "division": "Vijayawada",
+    "station_master_contact": "+91-8624-250324"
+  },
+  {
+    "code": "MAS",
+    "name": "MGR Chennai Central",
+    "lat": 13.0827,
+    "lng": 80.2707,
+    "km": 1661,
+    "platforms": 17,
+    "division": "Chennai",
+    "station_master_contact": "+91-44-2535-4422"
+  }
+]

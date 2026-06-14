@@ -1,0 +1,32 @@
+# Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python caching & build
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.tox/
+
+# Local databases
+*.db
+backend/db/arra.db
+
+# Sensitive keys
+.env
+.env.local
+
+# Node/Next.js files (if building at root or in subfolders)
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db

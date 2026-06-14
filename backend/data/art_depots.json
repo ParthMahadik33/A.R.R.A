@@ -1,0 +1,209 @@
+[
+  {
+    "id": "DEP-KGP",
+    "name": "Kharagpur Division ART Depot",
+    "lat": 22.3164,
+    "lng": 87.3142,
+    "station_code": "KGP",
+    "response_radius_km": 150,
+    "equipment": [
+      "Accident Relief Medical Van (ARMV)",
+      "140-Tonne Diesel Hydraulic Crane",
+      "Hydraulic Rescue Device (HRD)",
+      "Cold Cutting Equipment"
+    ],
+    "hospitals": [
+      {
+        "name": "Kharagpur Sub-Divisional Hospital",
+        "lat": 22.3300,
+        "lng": 87.3200,
+        "beds_available": 120,
+        "contact": "+91-3222-255024"
+      },
+      {
+        "name": "Midnapore Medical College and Hospital",
+        "lat": 22.4200,
+        "lng": 87.3100,
+        "beds_available": 350,
+        "contact": "+91-3222-222400"
+      }
+    ]
+  },
+  {
+    "id": "DEP-BLS",
+    "name": "Balasore ART Depot",
+    "lat": 21.5030,
+    "lng": 86.9250,
+    "station_code": "BLS",
+    "response_radius_km": 100,
+    "equipment": [
+      "Accident Relief Medical Van (ARMV)",
+      "Self-Propelled Accident Relief Train (SPART)",
+      "Hydraulic Jacks & Rerailing Equipment"
+    ],
+    "hospitals": [
+      {
+        "name": "Balasore District Headquarters Hospital",
+        "lat": 21.4900,
+        "lng": 86.9300,
+        "beds_available": 180,
+        "contact": "+91-6782-262145"
+      }
+    ]
+  },
+  {
+    "id": "DEP-BHC",
+    "name": "Bhadrak ART Depot",
+    "lat": 21.0500,
+    "lng": 86.5000,
+    "station_code": "BHC",
+    "response_radius_km": 100,
+    "equipment": [
+      "Class A Accident Relief Train",
+      "Hydraulic Rescue Devices",
+      "Medical First-Aid Van"
+    ],
+    "hospitals": [
+      {
+        "name": "Bhadrak District Headquarters Hospital",
+        "lat": 21.0600,
+        "lng": 86.4900,
+        "beds_available": 90,
+        "contact": "+91-6784-230402"
+      }
+    ]
+  },
+  {
+    "id": "DEP-KUR",
+    "name": "Khurda Road Division Headquarters ART Depot",
+    "lat": 20.1800,
+    "lng": 85.7300,
+    "station_code": "KUR",
+    "response_radius_km": 150,
+    "equipment": [
+      "Self-Propelled Accident Relief Train (SPART)",
+      "140-Tonne Heavy Crane",
+      "Advanced Trauma Care Van"
+    ],
+    "hospitals": [
+      {
+        "name": "AIIMS Bhubaneswar Hospital",
+        "lat": 20.2200,
+        "lng": 85.7800,
+        "beds_available": 400,
+        "contact": "+91-674-2476789"
+      },
+      {
+        "name": "Khurda District Headquarters Hospital",
+        "lat": 20.1800,
+        "lng": 85.6200,
+        "beds_available": 110,
+        "contact": "+91-6755-220230"
+      }
+    ]
+  },
+  {
+    "id": "DEP-PSA",
+    "name": "Palasa Sub-Division ART Depot",
+    "lat": 18.7700,
+    "lng": 84.4200,
+    "station_code": "PSA",
+    "response_radius_km": 100,
+    "equipment": [
+      "Accident Relief Medical Van (ARMV)",
+      "Tool Van",
+      "Re-railing Jacks"
+    ],
+    "hospitals": [
+      {
+        "name": "Palasa Area Hospital",
+        "lat": 18.7650,
+        "lng": 84.4150,
+        "beds_available": 60,
+        "contact": "+91-8945-241050"
+      }
+    ]
+  },
+  {
+    "id": "DEP-VSKP",
+    "name": "Visakhapatnam Division ART Depot",
+    "lat": 17.7200,
+    "lng": 83.3000,
+    "station_code": "VSKP",
+    "response_radius_km": 180,
+    "equipment": [
+      "Self-Propelled ARMV (SP-ARMV)",
+      "140-Tonne Diesel Hydraulic Crane",
+      "Heavy Tool Van",
+      "Inflatable Lighting Towers"
+    ],
+    "hospitals": [
+      {
+        "name": "King George Hospital Visakhapatnam",
+        "lat": 17.7050,
+        "lng": 83.3050,
+        "beds_available": 500,
+        "contact": "+91-891-2564891"
+      },
+      {
+        "name": "Seven Hills Hospital Vskp",
+        "lat": 17.7200,
+        "lng": 83.3150,
+        "beds_available": 200,
+        "contact": "+91-891-2708090"
+      }
+    ]
+  },
+  {
+    "id": "DEP-RJY",
+    "name": "Rajahmundry Sub-Division ART Depot",
+    "lat": 17.0000,
+    "lng": 81.7800,
+    "station_code": "RJY",
+    "response_radius_km": 120,
+    "equipment": [
+      "Accident Relief Medical Van (ARMV)",
+      "Hydraulic Rescue Cutter Van",
+      "Emergency Operations Tool Car"
+    ],
+    "hospitals": [
+      {
+        "name": "Rajahmundry District Hospital",
+        "lat": 17.0100,
+        "lng": 81.7900,
+        "beds_available": 150,
+        "contact": "+91-883-2473024"
+      }
+    ]
+  },
+  {
+    "id": "DEP-BZA",
+    "name": "Vijayawada Division Headquarters ART Depot",
+    "lat": 16.5100,
+    "lng": 80.6200,
+    "station_code": "BZA",
+    "response_radius_km": 200,
+    "equipment": [
+      "Self-Propelled Accident Relief Train (SPART)",
+      "140-Tonne Heavy Lift Crane",
+      "Accident Relief Medical Van",
+      "Satellite Communications Van"
+    ],
+    "hospitals": [
+      {
+        "name": "Vijayawada Government General Hospital",
+        "lat": 16.5050,
+        "lng": 80.6400,
+        "beds_available": 450,
+        "contact": "+91-866-2431222"
+      },
+      {
+        "name": "Ayush Hospital Vijayawada",
+        "lat": 16.5200,
+        "lng": 80.6800,
+        "beds_available": 150,
+        "contact": "+91-866-2545000"
+      }
+    ]
+  }
+]

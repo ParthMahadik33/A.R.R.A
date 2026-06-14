@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --background: #060606;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Custom Leaflet Dark Telemetry Skin Override */
+.leaflet-popup-content-wrapper {
+  background: #0d0d0d !important;
+  color: #e5e7eb !important; /* text-gray-200 */
+  border: 1px solid #1f2937 !important; /* border-gray-800 */
+  border-radius: 12px !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.8) !important;
+  padding: 4px !important;
+}
+
+.leaflet-popup-content {
+  margin: 10px 14px !important;
+  line-height: 1.5 !important;
+}
+
+.leaflet-popup-tip {
+  background: #0d0d0d !important;
+  border-left: 1px solid #1f2937 !important;
+  border-bottom: 1px solid #1f2937 !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  color: #9ca3af !important;
+  font-weight: bold !important;
+  padding: 8px 10px 0 0 !important;
+}
+
+/* Custom Scrollbar for Terminal Console */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}
+
+/* Custom Blink and pulse classes */
+@keyframes signal-glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.8);
+  }
+}
+
+.glow-green-pulse {
+  animation: signal-glow 2s infinite;
+}
