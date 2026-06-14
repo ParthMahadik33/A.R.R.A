@@ -1,4 +1,15 @@
+---
+title: ARRA Backend
+emoji: 🚄
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # ARRA — Autonomous Railway Response Architecture
+
 
 > **Autonomous Incident Response Layer for Indian Railways**  
 > Developed for **FAR AWAY 2026** — India's Biggest International Hackathon  
