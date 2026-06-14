@@ -248,10 +248,10 @@ class TrainSimulator:
         self.__init__()
 
     def prepare_demo_positions(self, incident_km, incident_track):
-        """Reposition closest approaching train to be exactly 18km (10 min) away."""
+        """Reposition closest approaching train to be exactly 5km (2.7 min) away."""
         # Idempotency check: see if a train is already at the target demo position
         for t in self.trains:
-            expected_km = incident_km - 18.0 if t["direction"] == "DOWN" else incident_km + 18.0
+            expected_km = incident_km - 5.0 if t["direction"] == "DOWN" else incident_km + 5.0
             if abs(t["km"] - expected_km) < 0.01:
                 return {
                     "train_no": t["train_no"],
@@ -280,8 +280,9 @@ class TrainSimulator:
             down_trains = [t for t in self.trains if t["direction"] == "DOWN"]
             target_train = down_trains[0] if down_trains else self.trains[0]
 
-        # 2. Position exactly 18km away (max/min to keep it within track range)
-        target_km = incident_km - 18.0 if target_train["direction"] == "DOWN" else incident_km + 18.0
+        # 2. Position exactly 5km away (max/min to keep it within track range)
+        target_km = incident_km - 5.0 if target_train["direction"] == "DOWN" else incident_km + 5.0
+
         target_km = max(0.0, min(1661.0, target_km))
         
         target_train["km"] = target_km
