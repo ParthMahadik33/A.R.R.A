@@ -120,19 +120,19 @@ def haversine(lat1, lon1, lat2, lon2):
 ### 2. Accident Relief Train (ART) and Hospital Emergency ETA Calculations
 Used by [RescueCoordinatorAgent](file:///c:/Users/Dell/OneDrive/文档/A.R.R.A%201/backend/agents/rescue.py#L20) to generate realistic dispatch logistics matching Indian Railways emergency SOPs:
 
-$$\text{ETA}_{\text{ART}} = \left( \frac{\text{Distance}_{\text{depot}}}{\text{Speed}_{\text{ART}}} \times 60 \right) + T_{\text{turnout\_day}}$$
+$$\text{ETA(ART)} = \left( \frac{\text{Distance(depot)}}{\text{Speed(ART)}} \times 60 \right) + T\text{(turnout)}$$
 
-$$\text{ETA}_{\text{Ambulance}} = \left( \frac{\text{Distance}_{\text{hospital}}}{\text{Speed}_{\text{ambulance}}} \times 60 \right) + T_{\text{dispatch\_hosp}}$$
+$$\text{ETA(Ambulance)} = \left( \frac{\text{Distance(hospital)}}{\text{Speed(ambulance)}} \times 60 \right) + T\text{(dispatch)}$$
 
 *Parameters:*
-*   $\text{Speed}_{\text{ART}} = 60.0 \text{ km/h}$
-*   $T_{\text{turnout\_day}} = 15.0 \text{ minutes}$ (standard daytime mobilization constraint)
-*   $\text{Speed}_{\text{ambulance}} = 50.0 \text{ km/h}$
-*   $T_{\text{dispatch\_hosp}} = 5.0 \text{ minutes}$
+*   $\text{Speed(ART)} = 60.0 \text{ km/h}$
+*   $T\text{(turnout)} = 15.0 \text{ minutes}$ (standard daytime mobilization constraint)
+*   $\text{Speed(ambulance)} = 50.0 \text{ km/h}$
+*   $T\text{(dispatch)} = 5.0 \text{ minutes}$
 
 ### 3. Kinematic Collision Risk and Time-to-Collision (TTC)
 Computed by [CollisionCalculatorAgent](file:///c:/Users/Dell/OneDrive/文档/A.R.R.A%201/backend/agents/collision.py#L5) for each active train on the corridor:
-*   Let $D$ be the distance to the incident marker ($KM_{\text{incident}}$) in km.
+*   Let $D$ be the distance to the incident marker ($KM\text{(incident)}$) in km.
 *   Let $V$ be the current speed in km/h.
 *   If the train is approaching the block:
 $$\text{TTC} = \left( \frac{D}{V} \right) \times 60 \text{ minutes}$$
@@ -145,18 +145,18 @@ $$\text{TTC} = \left( \frac{D}{V} \right) \times 60 \text{ minutes}$$
 
 ### 4. Absolute Block Signaling Spacing and Safeguard Zone
 The [SignalControllerAgent](file:///c:/Users/Dell/OneDrive/文档/A.R.R.A%201/backend/agents/signal.py#L4) simulates absolute block locking intervals:
-*   Lock Radius: $\pm 5.0 \text{ km}$ surrounding $KM_{\text{incident}}$, establishing a 10km security buffer.
+*   Lock Radius: $\pm 5.0 \text{ km}$ surrounding $KM\text{(incident)}$, establishing a 10km security buffer.
 *   Override Frequency: Signals are targeted at every 2.0 km interval.
 *   Command Protocol: All signals within the buffer range are set to `STOP` (RED), and an `EMERGENCY_BRAKE` order is transmitted.
 
 ### 5. Rolling Stock Inertia and Deceleration Profile
 Simulated inside [TrainSimulator](file:///c:/Users/Dell/OneDrive/文档/A.R.R.A%201/backend/data/simulation.py#L101) to replicate realistic train deceleration:
 
-$$V_{t + \Delta t} = \max\left(V_{\text{target}}, V_t - a_{\text{decel}} \cdot \Delta t\right)$$
+$$V(t + \Delta t) = \max\left(V\text{(target)}, V(t) - a\text{(decel)} \cdot \Delta t\right)$$
 
 *Deceleration rates:*
-*   Emergency braking: $a_{\text{decel}} = 25 \text{ km/h/s}$ (approx. $0.69 \text{ m/s}^2$ average deceleration)
-*   Normal braking: $a_{\text{decel}} = 10 \text{ km/h/s}$
+*   Emergency braking: $a\text{(decel)} = 25 \text{ km/h/s}$ (approx. $0.69 \text{ m/s}^2$ average deceleration)
+*   Normal braking: $a\text{(decel)} = 10 \text{ km/h/s}$
 
 ---
 
